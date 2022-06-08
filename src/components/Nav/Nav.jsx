@@ -10,11 +10,11 @@ const Nav = () => {
       </Link>
 
       <Link className="nav-menu__item" to="/projects">
-        PROJECTS
+        Projects
       </Link>
 
       <Link className="nav-menu__item" to="/new-project">
-        ADD A PROJECT
+        Add A Project
       </Link>
     </div>
   )

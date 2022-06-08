@@ -1,9 +1,11 @@
 import React from "react";
+import "./App.scss";
+import Dashboard from "./containers/Dashboard/Dashboard";
 
 const App = () => {
   return (
     <div>
-      <p>Your cleaned App component</p>
+      <Dashboard />
     </div>
   );
 };
