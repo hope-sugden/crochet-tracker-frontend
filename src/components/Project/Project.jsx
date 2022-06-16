@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import UpdateProject from '../UpdateProject/UpdateProject';
 import "./Project.scss";
 
@@ -30,6 +30,9 @@ const Project = (props) => {
   .catch(err => console.log(err));
   console.log("deleted");
 }
+useEffect( () => {
+
+}, [deleteProject]);
 
   return (
     <div className="project">

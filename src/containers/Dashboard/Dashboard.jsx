@@ -29,7 +29,7 @@ const Dashboard = () => {
 
     useEffect(() => {
         getProjects();
-    }, []);
+    }, [getProjects]);
 
   return (
     <Router>

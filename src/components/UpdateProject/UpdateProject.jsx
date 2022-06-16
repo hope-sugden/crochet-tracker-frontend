@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import whiteCross from "../../assets/images/white_cross.svg";
 import "./UpdateProject.scss";
 
@@ -28,6 +28,9 @@ const handleSubmit = (e) => {
 e.target.reset();
 console.log("project updated", project);
 }
+useEffect(()=> {
+
+}, [handleSubmit]);
         
   
 return (
