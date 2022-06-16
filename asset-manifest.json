@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/crochet-tracker-frontend/static/css/main.986ecfb4.css",
-    "main.js": "/crochet-tracker-frontend/static/js/main.d01becbd.js",
+    "main.js": "/crochet-tracker-frontend/static/js/main.eedcf89e.js",
     "index.html": "/crochet-tracker-frontend/index.html",
     "static/media/white_cross.svg": "/crochet-tracker-frontend/static/media/white_cross.604f17ae9e7f7ab96de76a3408313180.svg",
     "main.986ecfb4.css.map": "/crochet-tracker-frontend/static/css/main.986ecfb4.css.map",
-    "main.d01becbd.js.map": "/crochet-tracker-frontend/static/js/main.d01becbd.js.map"
+    "main.eedcf89e.js.map": "/crochet-tracker-frontend/static/js/main.eedcf89e.js.map"
   },
   "entrypoints": [
     "static/css/main.986ecfb4.css",
-    "static/js/main.d01becbd.js"
+    "static/js/main.eedcf89e.js"
   ]
 }
