@@ -10,8 +10,19 @@ const Dashboard = () => {
     const [projects, setProjects] = useState([]);
 
     const getProjects = () => {
-        fetch("https://crochet-tracker-gl7dtbm7qq-nw.a.run.app/crochet/projects")
-        .then(res => res.json())
+        fetch('https://crochet-tracker-gl7dtbm7qq-nw.a.run.app/crochet/projects', {
+            method: "GET",
+            headers: {
+                'Content-Type':"application/json"
+            },
+
+        })
+        .then(res => {
+            if(!res.ok){
+                console.log(res);
+                throw new Error(`${res.status}`)
+            }
+           return res.json()})
         .then(json => setProjects(json))
         .catch(err => console.log(err))
     }
