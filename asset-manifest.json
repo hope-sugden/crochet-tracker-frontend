@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/crochet-tracker-frontend/static/css/main.986ecfb4.css",
+    "main.js": "/crochet-tracker-frontend/static/js/main.293c1bce.js",
+    "index.html": "/crochet-tracker-frontend/index.html",
+    "static/media/white_cross.svg": "/crochet-tracker-frontend/static/media/white_cross.604f17ae9e7f7ab96de76a3408313180.svg",
+    "main.986ecfb4.css.map": "/crochet-tracker-frontend/static/css/main.986ecfb4.css.map",
+    "main.293c1bce.js.map": "/crochet-tracker-frontend/static/js/main.293c1bce.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.986ecfb4.css",
+    "static/js/main.293c1bce.js"
+  ]
+}
