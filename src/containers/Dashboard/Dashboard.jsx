@@ -35,7 +35,7 @@ const Dashboard = () => {
     <Router>
         <Nav />
         <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/crochet-tracker-frontend/" element={<Home />} />
             <Route path="/projects" element={<ProjectList projects={projects} />} />
             <Route path="/new-project" element={<Form />} />
         </Routes>
