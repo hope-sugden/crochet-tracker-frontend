@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 const Nav = () => {
   return (
     <div className="nav">
-      <Link className="nav-menu__item" to="/">
+      <Link className="nav-menu__item" to="/crochet-tracker-frontend/">
         Home
       </Link>
 
