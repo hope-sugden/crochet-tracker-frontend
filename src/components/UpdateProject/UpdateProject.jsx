@@ -36,7 +36,7 @@ useEffect(()=> {
 return (
 <div className="update-form">
     <div className="update-form__content">
-    <img src={whiteCross} alt="Close info" className="update-form__cross" onClick={toggleUpdateBox} />
+    <img src={whiteCross} alt="Close update project" className="update-form__cross" onClick={toggleUpdateBox} />
   <h2>Update project: {name}</h2>
   <form onSubmit={handleSubmit}>
     <input type="text" defaultValue={name} onInput={(e) => setProject({ ...project, name: e.target.value })} />

@@ -1,18 +1,49 @@
+@use "../../assets/sass/variables" as *;
 .project {
-    width: 90%;
+    width: 40%;
+    min-width: 198px;
+    max-width: 200px;
+    height:220px ;
     margin: 20px auto;
     padding: 10px;
-    background-color: rgb(88, 40, 199);
-    color: white;
+    background-color: $accent-colour-one;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
   
     h3 {
       font-size: 32px;
       margin: 0;
+      color: $heading-colour;
+      font-family: $font-heading;
+      background-color: $accent-colour-one;
     }
     
     p {
-      font-size: 12px;
-      font-weight: lighter;
+      font-size: 15px;
+      color: $body-colour;
+      background-color: $accent-colour-one;
+    }
+    &__buttons {
+      display: flex;
+      background-color: $accent-colour-one;
+      justify-content: space-around;
+    }
+    &__delete {
+      font-family: $font-secondary;
+      font-size: larger;
+      width: 40%;
+      background-color: $accent-colour-two;
+      border: none;
+      border-radius:10px;
+    }
+    &__update {
+      font-family: $font-secondary;
+      font-size: larger;
+      width: 40%;
+      background-color: $accent-colour-two;
+      border: none;
+      border-radius:10px;
     }
   }

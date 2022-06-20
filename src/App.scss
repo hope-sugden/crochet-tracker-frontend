@@ -1,4 +1,8 @@
+@use "./assets/sass/variables" as *;
 *{
     box-sizing:border-box;
     font-family: 'open sans', helvetica, arial, sans;
+    background-color:$background-colour ;
   }
+
+  

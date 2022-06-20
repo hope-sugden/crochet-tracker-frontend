@@ -1,11 +1,43 @@
+@use "../../assets/sass/variables" as *;
 .heading {
     text-align: center;
     margin: 50px 0;
     font-size: 36px;
-    font-family: 'open sans condensed';
+    font-family: $font-heading;
+    color: $heading-colour;
   }
   
   .container {
-    width: 60%;
-    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+    justify-items: center;
+    align-items: center;
+  
   }
+  .add-button {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    font-size: 5rem;
+    background-color: $accent-colour-one;
+    border: none;
+    color: $heading-colour;
+    font-family: $font-heading;
+  }
+
+  @media screen and (min-width:1060px) {
+    .container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media screen and (max-width:1060px) {
+  .container {
+      grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width:700px) {
+  .container {
+      grid-template-columns: 1fr;
+  }
+}

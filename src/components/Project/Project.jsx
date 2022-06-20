@@ -42,8 +42,10 @@ useEffect( () => {
       <p>Date started: {dateStarted}</p>
       <p>Date completed: {dateCompleted}</p>
       <p>Notes: {notes}</p>
-      <button type='button' className='deleteButton' onClick={deleteProject}>Delete</button>
-      <button type='button' className='updateButton' onClick={toggleUpdateBox}>Update</button>
+      <div className='project__buttons'>
+        <button type='button' className='project__delete' onClick={deleteProject}>Delete</button>
+        <button type='button' className='project__update' onClick={toggleUpdateBox}>Update</button>
+        </div>
     </div>
   )
 }

@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import "./Form.scss"
+import whiteCross from "../../assets/images/white_cross.svg"
 
-const Form = () => {
+const Form = ({toggleAddBox}) => {
     const [project, setProject] = useState({
         name: "",
         difficulty: "",
@@ -28,6 +29,8 @@ const Form = () => {
       
   return (
     <div className="log-form">
+      <div className='log-form__content'>
+        <img src={whiteCross} alt="Close Add Project" className='log-form__cross' onClick={toggleAddBox}/>
       <h2>Add A New Project</h2>
       <form onSubmit={handleSubmit}>
         <input type="text" placeholder="project name" onInput={(e) => setProject({ ...project, name: e.target.value })} />
@@ -37,6 +40,7 @@ const Form = () => {
         <input type="text" placeholder="notes" onInput={(e) => setProject({ ...project, notes: e.target.value })} />
         <button type="submit" className="btn">Submit</button>
       </form>
+      </div>
     </div>
   )
 }

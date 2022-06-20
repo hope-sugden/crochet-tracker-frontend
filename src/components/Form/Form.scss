@@ -1,12 +1,36 @@
+@use "../../assets/sass/variables" as *;
 $blue: rgb(88, 40, 199);
 
 .log-form {
-  width: 40%;
-  min-width: 320px;
-  max-width: 475px;
   background: #fff;
-  margin: 200px auto;
+  margin:  auto;
   box-shadow: 0px 2px 5px rgba(0,0,0,.25);
+  position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgb(0,0,0,0.4);
+    &__content {
+      background-color: $accent-colour-two;
+      margin: 15% auto;
+      padding: 20px;
+      border-radius: 10px;
+      width: 40%;
+      min-width: 320px;
+      max-width: 475px;
+  }
+  &__cross {
+    float: right;
+    background-color: transparent;
+}
+&__cross:hover,
+&__cross:focus {
+    cursor: pointer;
+}
   
   form {
     display: block;
@@ -16,18 +40,21 @@ $blue: rgb(88, 40, 199);
   
   h2 {
     width: 100%;
-    color: lighten(grey, 20%);
-    font-family: 'open sans condensed';
+    color: $heading-colour;
+    font-family: $font-heading;
     font-size: 1.35em;
     display: block;
-    background: rgb(46, 46, 46);
+    background: $accent-colour-one;
     width: 100%;
     text-transform: uppercase;
     padding: .75em 1em .75em 1.5em;
     box-shadow:inset 0px 1px 1px fadeout(white, 95%);
-    border: 1px solid darken(grey, 5%);
     margin: 0;
     font-weight: 200;
+  }
+  ::placeholder {
+    color: $body-colour;
+    opacity: 0.5;
   }
   
   input {
@@ -37,9 +64,10 @@ $blue: rgb(88, 40, 199);
     margin-bottom: 2em;
     padding: .5em 0;
     border: none;
-    border-bottom: 1px solid #eaeaea;
+    border-bottom: 1px solid $heading-colour;
     padding-bottom: 1.25em;
-    color: #757575;
+    color: $body-colour;
+    
     &:focus {
       outline: none;
     }
@@ -47,10 +75,13 @@ $blue: rgb(88, 40, 199);
   
   .btn {
     display: inline-block;
-    background: $blue;
-    border: 1px solid darken($blue, 5%);
+    background: $accent-colour-two;
+    border: none;
+    border-radius: 10px;
+    font-family: $font-secondary;
+    font-size: larger;
     padding: .5em 2em;
-    color: white;
+    color: $heading-colour;
     margin-right: .5em;
     box-shadow: inset 0px 1px 0px fadeout(white, 80%); 
     &:hover {

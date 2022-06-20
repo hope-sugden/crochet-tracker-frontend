@@ -1,0 +1,21 @@
+@font-face {
+    font-family: AYearWithoutRain;
+    src: url(../fonts/a_year_without_rain/AYearWithoutRain.ttf);
+}
+
+$font-heading: 'Montserrat', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+@font-face {
+    font-family: Mistrully;
+    src: url(../fonts/mistrully/Mistrully.ttf);
+}
+
+$font-secondary:'Mistrully', sans-serif;
+
+$background-colour: #F4E2C7;
+$accent-colour-one: #DB8D6F;
+$accent-colour-two: #C29175;
+$heading-colour: #521C06;
+$body-colour: #A5593C;
