@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import "./Nav.scss"
-import {Link} from "react-router-dom";
 import SearchBox from '../SearchBox/SearchBox';
 
 const Nav = ({searchTerm,handleInput,searchResultCount}) => {
