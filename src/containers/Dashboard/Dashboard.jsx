@@ -7,6 +7,9 @@ import ProjectList from '../../components/ProjectList/ProjectList';
 
 const Dashboard = () => {
     const [projects, setProjects] = useState([]);
+    const [searchTerm, setSearchTerm] = useState("");
+    const [showSearch, setShowSearch] = useState(false);
+
 
     const getProjects = () => {
         fetch('https://crochet-tracker-gl7dtbm7qq-nw.a.run.app/crochet/projects', {
@@ -30,10 +33,30 @@ const Dashboard = () => {
         getProjects();
     }, [getProjects]);
 
+    const toggleSearch = () => {
+        console.log(showSearch);
+        setShowSearch(!showSearch);
+      };
+
+    const handleInput = event => {
+        const cleanInput = event.target.value.toLowerCase();
+        setSearchTerm(cleanInput);
+      };
+    
+    //   const filteredProjects = projects.filter(project => {
+    //     const projectNameLower = project.name.toLowerCase();
+    //     return projectNameLower.includes(searchTerm);
+    //   })
+
+    const filteredProjects = projects.filter((project) => {
+        return project.name.toLowerCase().includes(searchTerm);
+    }) 
+
   return (
     <div>
+        <Nav toggleSearch={toggleSearch} searchTerm={searchTerm} handleInput={handleInput} searchResultCount={filteredProjects.length} />
         <Home />
-        <ProjectList projects={projects} />
+        <ProjectList filteredProjects={filteredProjects} />
         
     </div>
             
