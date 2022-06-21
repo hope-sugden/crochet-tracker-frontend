@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/crochet-tracker-frontend/static/css/main.ec6cdb9b.css",
-    "main.js": "/crochet-tracker-frontend/static/js/main.2d08cf4f.js",
+    "main.css": "/crochet-tracker-frontend/static/css/main.272631bf.css",
+    "main.js": "/crochet-tracker-frontend/static/js/main.69155609.js",
     "static/media/background.png": "/crochet-tracker-frontend/static/media/background.d3d3176c87decea7c1fc.png",
     "static/media/AYearWithoutRain.ttf": "/crochet-tracker-frontend/static/media/AYearWithoutRain.368dce6a29aaea82dc21.ttf",
     "static/media/Mistrully.ttf": "/crochet-tracker-frontend/static/media/Mistrully.4e0e9b0a2a6c0899ae68.ttf",
     "index.html": "/crochet-tracker-frontend/index.html",
     "static/media/white_cross.svg": "/crochet-tracker-frontend/static/media/white_cross.604f17ae9e7f7ab96de76a3408313180.svg",
-    "main.ec6cdb9b.css.map": "/crochet-tracker-frontend/static/css/main.ec6cdb9b.css.map",
-    "main.2d08cf4f.js.map": "/crochet-tracker-frontend/static/js/main.2d08cf4f.js.map"
+    "main.272631bf.css.map": "/crochet-tracker-frontend/static/css/main.272631bf.css.map",
+    "main.69155609.js.map": "/crochet-tracker-frontend/static/js/main.69155609.js.map"
   },
   "entrypoints": [
-    "static/css/main.ec6cdb9b.css",
-    "static/js/main.2d08cf4f.js"
+    "static/css/main.272631bf.css",
+    "static/js/main.69155609.js"
   ]
 }
